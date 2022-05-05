@@ -1,0 +1,7 @@
+noremap <leader>r :call RunCode()<cr>
+
+func RunCode()
+  if &ft == 'markdown'
+    exec "MarkdownPreviewToggle"
+  endif
+endfunc

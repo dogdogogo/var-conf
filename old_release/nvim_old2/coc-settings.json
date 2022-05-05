@@ -1,0 +1,23 @@
+// JSON
+{
+  "vimlsp.diagnostic.enable": true,
+  "diagnostic.enableSign": true,
+  "diagnostic.autoRefresh": true,
+  "coc.source.file.ignoreHidden": false,
+  "coc.preferences.enableMessageDialog": true,
+
+  // coc-snippets
+  "snippets.ultisnips.enable":true,
+  "suggest.snippetsSupport": true,
+  "snippets.extends": {
+    "cpp" : ["c"]
+  },
+  "snippets.ultisnips.directories": [
+    "~/.config/nvim/UltiSnips"
+  ],
+
+  // coc-clangd
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd", // CocCommand clangd.install ----> installation path
+  "clangd.disableSnippetCompletion": false
+
+}

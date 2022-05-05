@@ -1,0 +1,30 @@
+" ===
+" === vista
+" ===
+
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+set statusline+=%{NearestMethodOrFunction()}
+" By default vista.vim never run if you don't call it explicitly.
+"
+" If you want to show the nearest function in your statusline automatically,
+" you can add the following line to your vimrc
+autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+
+noremap <leader>vv :Vista!!<cr>
+noremap <leader>vf :Vista finder ctags<cr>
+
+let g:vista_sidebar_width = 30
+let g:vista_fold_toggle_icons = ['▼', '▶']
+let g:vista_echo_cursor = 1
+let g:vista_cursor_delay = 5
+let g:vista_echo_cursor_strategy = 'scroll'
+let g:vista_update_on_text_changed = 1
+let g:vista_update_on_text_changed_delay = 5
+let g:vista_close_on_jump = 0
+let g:vista_close_on_fzf_select = 0
+let g:vista_stay_on_open = 1
+let g:vista_default_executive = 'ctags'
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+let g:vista#renderer#enable_icon = 1

@@ -1,0 +1,8 @@
+" ===
+" === Select Vim colorcheme
+" ===
+
+" Optionnal Colorscheme: snazzy, deus, gruvbox, dracula, onedark, vim-one, PaperColor, iceberg
+let g:colorscheme_name = 'iceberg'
+execute 'source' . g:nvim_config_path . '/pcfg_files/colorschemes/' . g:colorscheme_name . '.pcfg'
+

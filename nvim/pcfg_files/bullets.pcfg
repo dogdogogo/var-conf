@@ -1,0 +1,25 @@
+" ===
+" === bullets
+" ===
+
+let g:bullets_enabled_file_types = [
+      \ 'markdown',
+      \ 'gitcommit'
+      \ ]
+let g:bullets_set_mappings = 0
+for i in g:bullets_enabled_file_types
+  if &ft == i
+    let g:bullets_set_mappings = 1
+  endif
+endfor
+
+let g:bullets_enable_in_empty_buffers = 0
+let g:bullets_delete_last_bullet_if_empty = 1
+let g:bullets_line_spacing = 1
+let g:bullets_pad_right = 0
+let g:bullets_max_alpha_characters = 2
+let g:bullets_outline_levels = ['ROM', 'ABC', 'num', 'abc', 'rom', 'std-', 'std*', 'std+']
+let g:bullets_outline_levels = []
+let g:bullets_renumber_on_change = 1
+let g:bullets_nested_checkboxes = 1 " good but have not be used by me
+

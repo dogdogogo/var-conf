@@ -6,4 +6,5 @@
 - picom
 - ranger
 - hosts file
+- templates
 - **coming soon**

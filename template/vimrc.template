@@ -21,6 +21,7 @@ filetype plugin indent on
 augroup GetLastPosition " Return to where you last edited
   au!
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+augroup END
 
 map H 5h
 map J 5j

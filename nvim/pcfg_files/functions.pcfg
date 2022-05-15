@@ -1,3 +1,7 @@
+" ===
+" === functions
+" ===
+
 noremap <leader>r :call RunCode()<cr>
 
 func RunCode()

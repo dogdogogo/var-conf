@@ -4,6 +4,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set showtabline=1
 set autoindent
 set scrolloff=6
 set history=1000
@@ -17,11 +18,15 @@ set incsearch
 set ignorecase
 set smartcase
 set hidden
+set encoding=utf-8
+set fileencoding=utf-8
+set clipboard=unnamed
 filetype plugin indent on
 augroup GetLastPosition " Return to where you last edited
   au!
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 augroup END
+exec 'nohlsearch'
 
 map H 5h
 map J 5j
@@ -31,3 +36,7 @@ map L 5l
 let mapleader=' '
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+nnoremap <leader>sh :nohls<cr>
+
+" test
+set statusline=%F\ %r\ %m%=%3p%%\ \ \ \ \ %y

@@ -1,0 +1,10 @@
+snippet main "c --> main" b
+//usr/bin/env gcc-11 -o main "\$0" && ./main; rm -rf main; exit
+#include <stdio.h>
+
+int main() {
+	${0:main}
+
+	return 0;
+}
+endsnippet

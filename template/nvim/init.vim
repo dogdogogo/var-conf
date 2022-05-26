@@ -1,3 +1,6 @@
+" ===
+" ++++ normal settings
+" ===
 set nu
 syntax on
 set tabstop=2
@@ -34,7 +37,9 @@ exec 'nohlsearch'
 let mapleader=' '
 
 
-" plug-in list
+" ===
+" ++++ plug-in list
+" ===
 call plug#begin()
 
 Plug 'cocopon/iceberg.vim'
@@ -63,7 +68,9 @@ for f in g:config_file_list
 endfor
 
 
-" basic Mappings
+" ===
+" ++++ mappings
+" ===
 map H 3h
 map J 3j
 map K 3k
@@ -89,15 +96,19 @@ imap ∆ <a-j>
 inoremap <a-k> <esc>O
 imap ˚ <a-k>
 
-vnoremap - $
+vnoremap - $h
 
-" mapleader Mappings
+" ===
+" ++++ mapleader mappings
+" ===
 nnoremap <leader>bn :bnext<cr>
 nnoremap <leader>bN :bNext<cr>
 nnoremap <leader>bd :bdelete<cr>
 nnoremap <leader>= : source $MYVIMRC<cr>
 nnoremap <leader>sh :nohlsearch<cr>
 
-" color, style settings
+" ===
+" ++++ color, style
+" ===
 set guicursor=a:block
 

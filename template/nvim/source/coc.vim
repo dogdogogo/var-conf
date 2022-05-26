@@ -8,7 +8,6 @@ set updatetime=100
 set shortmess+=c
 
 let g:coc_global_extensions = [
-      \ 'coc-marketplace',
       \ 'coc-snippets',
       \ 'coc-clangd',
       \ 'coc-json',

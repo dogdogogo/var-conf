@@ -1,6 +1,7 @@
 " ===
-" === UltiSnips
+" ++++ UltiSnips
 " ===
+
 
 let g:UltiSnipsEditSplit="horizontal"
 let g:UltiSnipsSnippetDirectories=["${HOME}/.config/nvim/UltiSnips", "UltiSnips"]

@@ -17,11 +17,10 @@
   ],
 
   // coc-clangd
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.0/clangd_14.0.0/bin/clangd", // CocCommand clangd.install ----> installation path
-  "clangd.disableSnippetCompletion": false,
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd",
+  "clangd.disableSnippetCompletion": true,
 
   // coc-pyright
-  "python.pythonPath": "/usr/local/Cellar/python@3.9/3.9.12/bin/python3.9",
   "pyright.enable": true,
   "pyright.completion.importSupport": true
 }

@@ -1,5 +1,5 @@
 " ===
-" === auto-pairs
+" ++++ auto-pairs
 " ===
 
 let g:AutoPairsFlyMode = 0

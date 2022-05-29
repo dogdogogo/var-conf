@@ -1,8 +1,0 @@
-" ===
-" === vim-peekaboo
-" ===
-
-let g:peekaboo_window = 'vert bo 25new'
-let g:peekaboo_delay = 100
-let g:peekaboo_compact = 0
-

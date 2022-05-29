@@ -1,12 +1,14 @@
 " ===
-" === vim-translator
+" ++++ vim-translator
 " ===
+
 
 let g:translator_source_lang='auto'
 let g:translator_target_lang='zh'
-let g:translator_default_engines=['google', 'bing']
+" let g:translator_default_engines=['google', 'bing']
+let g:translator_default_engines=['google']
 " let g:translator_proxy_url='socks5://172.16.188.1:1080'
-let g:translator_proxy_url='socks5://127.0.0.1:9980'
+ let g:translator_proxy_url='socks5://127.0.0.1:9980'
 let g:translator_history_enable=1
 let g:translator_window_type='preview'
 

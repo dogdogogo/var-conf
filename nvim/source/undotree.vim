@@ -1,5 +1,5 @@
 " ===
-" === undotree
+" ++++ undotree
 " ===
 
 nnoremap <leader>u :UndotreeToggle<cr>

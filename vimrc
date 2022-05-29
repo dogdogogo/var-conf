@@ -42,10 +42,10 @@ exec 'nohlsearch'
 " ===
 " ++++ basic mappings
 " ===
-map H 3h
-map J 3j
-map K 3k
-map L 3l
+map H 5h
+map J 5j
+map K 5k
+map L 5l
 nnoremap sl :set splitright<cr>:vsplit<cr>
 nnoremap sh :set nosplitright<cr>:vsplit<cr>
 nnoremap sj :set splitbelow<cr>:split<cr>

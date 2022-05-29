@@ -1,5 +1,5 @@
 " ===
-" === functions
+" ++++ function
 " ===
 
 noremap <leader>r :call RunCode()<cr>
@@ -24,6 +24,8 @@ func RunCode()
     :sp
     :res -5
     term python3.9 %
+  elseif file_type == "makrdown"
+    exec "MarkdownPreviewToggle"
 
   endif
 endfunc

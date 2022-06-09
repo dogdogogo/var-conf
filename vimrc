@@ -21,6 +21,8 @@ set ignorecase
 set smartcase
 set hidden
 set nocompatible
+set wrap
+set textwidth=80
 filetype plugin indent on
 set clipboard+=unnamedplus
 set encoding=utf-8

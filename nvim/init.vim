@@ -19,6 +19,8 @@ set incsearch
 set ignorecase
 set smartcase
 set hidden
+set wrap
+set textwidth=80
 set nocompatible
 filetype plugin indent on
 set clipboard+=unnamedplus
@@ -102,6 +104,7 @@ imap ˚ <a-k>
 
 vnoremap - $h
 
+
 " ===
 " ++++ mapleader mappings
 " ===
@@ -110,9 +113,24 @@ nnoremap <leader>bN :bNext<cr>
 nnoremap <leader>bd :bdelete<cr>
 nnoremap <leader>= : source $MYVIMRC<cr>
 nnoremap <leader>sh :nohlsearch<cr>
+nnoremap <c-h> :bNext<cr>
+nnoremap <leader>h <c-w>h
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>l <c-w>l
+
+
+" ===
+" ++++ toggle mappings
+" ===
+
+" coc trigger
+noremap <leader>' :CocDisable<cr>
+noremap <leader>; :CocEnable<cr>
+
 
 " ===
 " ++++ color, style
 " ===
-set guicursor=a:block
+" set guicursor=a:block
 

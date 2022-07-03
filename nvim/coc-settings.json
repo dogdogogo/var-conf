@@ -22,5 +22,11 @@
 
   // coc-pyright
   "pyright.enable": true,
-  "pyright.completion.importSupport": true
+  "pyright.completion.importSupport": true,
+
+  // coc-html
+  "html.format.enable": true,
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "html.autoCreateQuotes": true,
 }

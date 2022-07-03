@@ -14,7 +14,7 @@ let g:coc_global_extensions = [
       \ 'coc-vimlsp',
       \ 'coc-snippets',
       \ 'coc-pyright',
-      \ 'coc-java',
+      \ 'coc-html',
       \ ]
 
 if has("nvim-0.5.0") || has("patch-8.1.1564")
@@ -41,10 +41,6 @@ endfunction
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Disable coc
-noremap <c-t>d :CocDisable<cr>
-noremap <c-t>e :CocEnable<cr>
 
 " Symbol renaming.
 " nmap <leader>ln <Plug>(coc-rename)

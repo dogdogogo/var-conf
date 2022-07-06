@@ -1,8 +1,0 @@
-" ===
-" === VIM COLORSCHEME: snazzy
-" ===
-
-let g:SnazzyTransparent = 1
-
-colorscheme snazzy
-

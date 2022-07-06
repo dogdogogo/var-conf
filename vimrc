@@ -24,7 +24,7 @@ set nocompatible
 set wrap
 set textwidth=80
 filetype plugin indent on
-set clipboard+=unnamedplus
+set clipboard=unnamed
 set encoding=utf-8
 set fileencoding=utf-8
 set statusline=%F\ %r\ %m%=%3p%%\ \ \ \ \ %y
@@ -83,4 +83,4 @@ nnoremap <leader>sh :nohlsearch<cr>
 " ===
 " ++++ color, style settings
 " ===
-set guicursor=a:block
+" set guicursor=a:block

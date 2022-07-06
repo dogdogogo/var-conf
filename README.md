@@ -1,1 +1,1 @@
-# var-conf
+# configurations
